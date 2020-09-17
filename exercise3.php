@@ -16,6 +16,7 @@ class Beverage
     $this->temperature = $temperature;
   }
 
+  // Getters and Setters
   public function setColor($color)
   {
     $this->color = $color;
