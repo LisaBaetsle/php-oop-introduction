@@ -4,9 +4,9 @@
 class Beverage
 {
   // Properties
-  private string $color;
-  private int $price;
-  private string $temperature;
+  protected string $color;
+  protected int $price;
+  protected string $temperature;
 
   // Constructor
   public function __construct(string $color, float $price, string $temperature = 'cold')
@@ -46,8 +46,8 @@ class Beverage
 // EXERCISE TWO
 class Beer extends Beverage
 {
-  private string $name;
-  private float $alcoholPercentage;
+  protected string $name;
+  protected float $alcoholPercentage;
 
   public function __construct(string $color, float $price,  string $name, float $alcoholPercentage, string $temperature = 'cold')
   {
